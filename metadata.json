@@ -1,0 +1,6 @@
+{
+  "name": "Tirmal Reminder",
+  "description": "Android Reminder App - वाढदिवस, मिटिंग, अपॉइंटमेंट, सर्व्हिसिंग, हप्ता (EMI) आणि इतर कामांचे अचूक अलार्म व नोटिफिकेशन्स.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

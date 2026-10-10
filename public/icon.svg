@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="bellGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e1b4b" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle (Android Adaptive Icon shape) -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Subtle Pattern / Accent Rings -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="white" stroke-width="4" stroke-opacity="0.12" stroke-dasharray="12 12" />
+  <circle cx="256" cy="256" r="220" fill="none" stroke="white" stroke-width="2" stroke-opacity="0.08" />
+
+  <!-- Alarm Bell & Clock Hybrid Icon -->
+  <g filter="url(#shadow)">
+    <!-- Bell Top Ring -->
+    <path d="M256 120 C242 120 232 130 232 144 L280 144 C280 130 270 120 256 120 Z" fill="#fcd34d" />
+    
+    <!-- Bell Dome Body -->
+    <path d="M256 148 C185 148 165 210 165 285 C165 315 152 335 140 348 C135 354 139 364 148 364 L364 364 C373 364 377 354 372 348 C360 335 347 315 347 285 C347 210 327 148 256 148 Z" fill="url(#bellGrad)" />
+
+    <!-- Clapper Bottom -->
+    <path d="M228 376 C230 392 242 404 256 404 C270 404 282 392 284 376 Z" fill="#d97706" />
+
+    <!-- Clock Face inside Bell -->
+    <circle cx="256" cy="275" r="48" fill="#1e1b4b" opacity="0.85" />
+    <circle cx="256" cy="275" r="4" fill="#fbbf24" />
+    <!-- Clock Hands (Pointing to reminder 10:10) -->
+    <line x1="256" y1="275" x2="242" y2="255" stroke="#ffffff" stroke-width="5" stroke-linecap="round" />
+    <line x1="256" y1="275" x2="278" y2="265" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Sound waves emitting -->
+    <path d="M124 230 C110 250 110 280 124 300" stroke="#fef08a" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.9" />
+    <path d="M96 215 C78 245 78 295 96 325" stroke="#fef08a" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.6" />
+
+    <path d="M388 230 C402 250 402 280 388 300" stroke="#fef08a" stroke-width="7" stroke-linecap="round" fill="none" opacity="0.9" />
+    <path d="M416 215 C434 245 434 295 416 325" stroke="#fef08a" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.6" />
+  </g>
+</svg>
